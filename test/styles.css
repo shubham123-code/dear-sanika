@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f4f1ea; /* Paper-like background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .page {
+    width: 80%;
+    max-width: 800px;
+    min-height: 90%;
+    padding: 30px;
+    border: 10px solid #8b5e3c; /* Book cover border color */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3),
+                inset 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Page color */
+    position: relative;
+  }
+  
+  .page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid #d4a373; /* Inner decorative border */
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2; /* Ensure text stays above decorative border */
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Times New Roman', serif;
+    color: #5a3e2b; /* Classic book-like color */
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+  

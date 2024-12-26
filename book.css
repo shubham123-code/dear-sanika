@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: black;
+  color: white;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+body {
+  position: relative;
+  margin: 2rem;
+  padding: 2.5rem;
+  font-family: "Spectral", serif;
+  font-size: 0.75rem;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-thumb {
+  border: 0.25rem solid #000;
+}
+
+.sanu_pretty {
+  float: right;
+  height: 240px;
+  width: 180px;
+  background: #FFFFFF;
+  padding: 10px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 20px;
+}
+.car {
+  float: right;
+  height: 180px;
+  width: 240px;
+  background: #FFFFFF;
+  padding: 10px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 20px;
+}
+.kar{
+  float: left;
+  height: 180px;
+  width: 240px;
+  background: #FFFFFF;
+  padding: 10px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 20px;
+}
+.women_flower {
+  float: left;
+  height: 240px;
+  width: 180px;
+  shape-margin: 2rem;
+  background: #FFFFFF;
+  padding: 10px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.title__first {
+  margin: 3rem 0 -2.5rem 0;
+  padding-left: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+}
+
+.title__second {
+  margin: revert;
+  font-size: 3rem;
+  text-align: left;
+  font-family: "Fleur De Leah", cursive;
+}
+  
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-style: italic;
+}
+
+h3 {
+  width: 15rem;
+  margin: 2rem 0 2rem 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+p {
+  text-align: justify;
+  margin: 50px 0;
+  line-height: 1.5rem;
+}
+p:first-letter {
+  padding: 0.25rem;
+  margin: -1rem 0.25rem -0.25rem 0;
+  font-family: "Fleur De Leah", cursive;
+  font-size: 2.5rem;
+}
+h3::first-letter{
+  padding: 0.25rem;
+  margin: -1rem 0.25rem -0.25rem 0;
+  font-family: "Fleur De Leah", cursive;
+  font-size: 3rem;
+}
+p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+
+/*# sourceMappingURL=book.css.map */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("photos/Untitled\ design.png");
+  background-size: cover;
+}
+
+/* Book */
+.book {
+  position: relative;
+  width: 600px;
+  height: 800px;
+  transition: transform 0.5s;
+}
+
+.paper {
+  position: absolute;
+  padding-left: 100px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+	background-position: center right;
+	padding: 30px 80px 50px 80px;
+  
+	
+  /* perspective: 1500px; */
+
+}
+
+.front,
+.back {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 1s;
+  z-index: 1;
+  margin: 10px auto;
+  padding: 50px;
+  columns: 22rem auto;
+  column-gap: 1.5rem;
+  background: url("photos/Grey\ and\ Blue\ Watercolor\ Simple\ Floral\ Page\ Border.jpg");
+	background-size: cover;
+  border: 30px;
+  border-color: brown;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+  border-left: 3px solid white;
+  z-index: 1;
+  margin: 10px auto;
+  padding: 50px;
+  columns: 22rem auto;
+  column-gap: 1.5rem;
+  background: url("photos/Grey\ and\ Blue\ Watercolor\ Simple\ Floral\ Page\ Border.jpg");
+	background-size: cover;
+  border: 30px;
+  border-color: brown;
+}
+
+.back {
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-content{
+  width: 100%;
+  height: 100%;
+}
+.back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caring-back {
+  width: 360px;
+  height: 540px;
+}
+
+.back-content {
+  transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 1s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover i {
+  color: #636363;
+}
+
+i {
+  font-size: 50px;
+  color: gray;
+}
+
+/* Paper stack order */
+#p1 {
+  z-index: 4;
+}
+
+#p2 {
+  z-index: 3;
+}
+
+#p3 {
+  z-index: 2;
+}
+
+#p4{
+  z-index: 1;
+}
+
+#cover{
+  padding: 0.25rem;
+  margin: -1rem 0.25rem -0.25rem 0;
+  font-family: "Fleur De Leah", cursive;
+  font-size: 3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#book_back{
+  padding: 0.25rem;
+  margin: -1rem 0.25rem -0.25rem 0;
+  font-family: "Fleur De Leah", cursive;
+  font-size: 3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
